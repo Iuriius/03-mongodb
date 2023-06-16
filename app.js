@@ -5,8 +5,8 @@ const dotenv = require("dotenv");
 
 const contactsRouter = require("./routes/api/contact");
 
-const app = express();
 dotenv.config();
+const app = express();
 
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
